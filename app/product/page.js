@@ -9,9 +9,7 @@ export default function ProductPage(props) {
     const addItemToCart = useCard(state => state.addItemToCart)
     const {  cost,  productInfo, name, description} = product
 
-    if (!product?.name) {
-        window.location.href = '/'
-    }
+   
 
     function handleAddToCart() {
       const newItem = {
